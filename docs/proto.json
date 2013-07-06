@@ -1,0 +1,13 @@
+{
+	"name": "My design",
+	"type": "object",
+	"description": "A simple object",
+	"license": "Public Domain",
+	"difference": {
+		"union": {
+			"a_cube": {
+				"type": "cube",
+				"size": [10,10,10],
+				"location": [0,0,0],
+				}
+				
