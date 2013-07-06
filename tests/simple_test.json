@@ -1,0 +1,120 @@
+{
+    "construction": {
+        "elements": [
+            {
+                "elements": [
+                    {
+                        "elements": [
+                            {
+                                "size": [
+                                    {
+                                        "type": "parameter",
+                                        "name": "a param"
+                                    },
+                                    0,
+                                    3
+                                ],
+                                "type": "element",
+                                "center": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "name": "cube",
+                                "location": [
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            {
+                                "size": [
+                                    1,
+                                    1,
+                                    1
+                                ],
+                                "type": "element",
+                                "center": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "name": "cube",
+                                "location": [
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            {
+                                "size": [
+                                    10,
+                                    10,
+                                    10
+                                ],
+                                "type": "element",
+                                "center": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "name": "cube",
+                                "location": [
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            }
+                        ],
+                        "type": "operation",
+                        "name": "union"
+                    },
+                    {
+                        "center": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "height": 10,
+                        "radius": 1,
+                        "location": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "type": "element",
+                        "name": "cylinder"
+                    }
+                ],
+                "type": "operation",
+                "name": "difference"
+            },
+            {
+                "size": [
+                    1,
+                    1,
+                    1
+                ],
+                "type": "element",
+                "center": [
+                    0,
+                    0,
+                    0
+                ],
+                "name": "cube",
+                "location": [
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ],
+        "type": "operation",
+        "name": "intersection"
+    },
+    "requires": [],
+    "parameters": {
+        "type": "parameter",
+        "name": "a param"
+    }
+}
