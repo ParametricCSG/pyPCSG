@@ -1,120 +1,453 @@
 {
-    "construction": {
-        "elements": [
-            {
-                "elements": [
-                    {
-                        "elements": [
-                            {
-                                "size": [
-                                    {
-                                        "type": "parameter",
-                                        "name": "a param"
+    "elements": [
+        {
+            "elements": [
+                {
+                    "elements": [
+                        {
+                            "elements": [
+                                {
+                                    "center": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "construction": [
+                                        {
+                                            "elements": {
+                                                "center": [
+                                                    0,
+                                                    0,
+                                                    0
+                                                ],
+                                                "construction": [
+                                                    {
+                                                        "construction": [
+                                                            [
+                                                                0,
+                                                                0
+                                                            ]
+                                                        ],
+                                                        "location": [
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "name": "point",
+                                                        "type": "element"
+                                                    },
+                                                    {
+                                                        "construction": [
+                                                            [
+                                                                0,
+                                                                0
+                                                            ]
+                                                        ],
+                                                        "location": [
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "name": "point",
+                                                        "type": "element"
+                                                    },
+                                                    {
+                                                        "construction": [
+                                                            [
+                                                                0,
+                                                                0
+                                                            ]
+                                                        ],
+                                                        "location": [
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "name": "point",
+                                                        "type": "element"
+                                                    },
+                                                    {
+                                                        "construction": [
+                                                            [
+                                                                0,
+                                                                0
+                                                            ]
+                                                        ],
+                                                        "location": [
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "name": "point",
+                                                        "type": "element"
+                                                    }
+                                                ],
+                                                "location": [
+                                                    0,
+                                                    0,
+                                                    0
+                                                ],
+                                                "name": "square",
+                                                "size": [
+                                                    0,
+                                                    0,
+                                                    3
+                                                ],
+                                                "type": "element"
+                                            },
+                                            "length": 3,
+                                            "name": "extrude",
+                                            "type": "operation"
+                                        }
+                                    ],
+                                    "location": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "name": "cube",
+                                    "size": [
+                                        0,
+                                        0,
+                                        3
+                                    ],
+                                    "type": "element"
+                                },
+                                {
+                                    "center": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "construction": [
+                                        {
+                                            "elements": {
+                                                "center": [
+                                                    0,
+                                                    0,
+                                                    0
+                                                ],
+                                                "construction": [
+                                                    {
+                                                        "construction": [
+                                                            [
+                                                                0,
+                                                                0
+                                                            ]
+                                                        ],
+                                                        "location": [
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "name": "point",
+                                                        "type": "element"
+                                                    },
+                                                    {
+                                                        "construction": [
+                                                            [
+                                                                1,
+                                                                0
+                                                            ]
+                                                        ],
+                                                        "location": [
+                                                            1,
+                                                            0
+                                                        ],
+                                                        "name": "point",
+                                                        "type": "element"
+                                                    },
+                                                    {
+                                                        "construction": [
+                                                            [
+                                                                0,
+                                                                1
+                                                            ]
+                                                        ],
+                                                        "location": [
+                                                            0,
+                                                            1
+                                                        ],
+                                                        "name": "point",
+                                                        "type": "element"
+                                                    },
+                                                    {
+                                                        "construction": [
+                                                            [
+                                                                1,
+                                                                1
+                                                            ]
+                                                        ],
+                                                        "location": [
+                                                            1,
+                                                            1
+                                                        ],
+                                                        "name": "point",
+                                                        "type": "element"
+                                                    }
+                                                ],
+                                                "location": [
+                                                    0,
+                                                    0,
+                                                    0
+                                                ],
+                                                "name": "square",
+                                                "size": [
+                                                    1,
+                                                    1,
+                                                    1
+                                                ],
+                                                "type": "element"
+                                            },
+                                            "length": 1,
+                                            "name": "extrude",
+                                            "type": "operation"
+                                        }
+                                    ],
+                                    "location": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "name": "cube",
+                                    "size": [
+                                        1,
+                                        1,
+                                        1
+                                    ],
+                                    "type": "element"
+                                }
+                            ],
+                            "name": "union",
+                            "type": "operation"
+                        },
+                        {
+                            "center": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "construction": [
+                                {
+                                    "elements": {
+                                        "center": [
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "construction": [
+                                            {
+                                                "construction": [
+                                                    [
+                                                        0,
+                                                        0
+                                                    ]
+                                                ],
+                                                "location": [
+                                                    0,
+                                                    0
+                                                ],
+                                                "name": "point",
+                                                "type": "element"
+                                            },
+                                            {
+                                                "construction": [
+                                                    [
+                                                        10,
+                                                        0
+                                                    ]
+                                                ],
+                                                "location": [
+                                                    10,
+                                                    0
+                                                ],
+                                                "name": "point",
+                                                "type": "element"
+                                            },
+                                            {
+                                                "construction": [
+                                                    [
+                                                        0,
+                                                        10
+                                                    ]
+                                                ],
+                                                "location": [
+                                                    0,
+                                                    10
+                                                ],
+                                                "name": "point",
+                                                "type": "element"
+                                            },
+                                            {
+                                                "construction": [
+                                                    [
+                                                        10,
+                                                        10
+                                                    ]
+                                                ],
+                                                "location": [
+                                                    10,
+                                                    10
+                                                ],
+                                                "name": "point",
+                                                "type": "element"
+                                            }
+                                        ],
+                                        "location": [
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "name": "square",
+                                        "size": [
+                                            10,
+                                            10,
+                                            10
+                                        ],
+                                        "type": "element"
                                     },
-                                    0,
-                                    3
-                                ],
-                                "type": "element",
-                                "center": [
-                                    0,
-                                    0,
-                                    0
-                                ],
-                                "name": "cube",
-                                "location": [
-                                    0,
-                                    0,
-                                    0
-                                ]
-                            },
-                            {
-                                "size": [
-                                    1,
-                                    1,
-                                    1
-                                ],
-                                "type": "element",
-                                "center": [
-                                    0,
-                                    0,
-                                    0
-                                ],
-                                "name": "cube",
-                                "location": [
-                                    0,
-                                    0,
-                                    0
-                                ]
-                            },
-                            {
-                                "size": [
-                                    10,
-                                    10,
-                                    10
-                                ],
-                                "type": "element",
-                                "center": [
-                                    0,
-                                    0,
-                                    0
-                                ],
-                                "name": "cube",
-                                "location": [
-                                    0,
-                                    0,
-                                    0
-                                ]
-                            }
-                        ],
-                        "type": "operation",
-                        "name": "union"
-                    },
-                    {
+                                    "length": 10,
+                                    "name": "extrude",
+                                    "type": "operation"
+                                }
+                            ],
+                            "location": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "name": "cube",
+                            "size": [
+                                10,
+                                10,
+                                10
+                            ],
+                            "type": "element"
+                        }
+                    ],
+                    "name": "union",
+                    "type": "operation"
+                },
+                {
+                    "center": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "construction": [],
+                    "height": 10,
+                    "location": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "name": "cylinder",
+                    "radius": 1,
+                    "type": "element"
+                }
+            ],
+            "name": "difference",
+            "type": "operation"
+        },
+        {
+            "center": [
+                0,
+                0,
+                0
+            ],
+            "construction": [
+                {
+                    "elements": {
                         "center": [
                             0,
                             0,
                             0
                         ],
-                        "height": 10,
-                        "radius": 1,
+                        "construction": [
+                            {
+                                "construction": [
+                                    [
+                                        0,
+                                        0
+                                    ]
+                                ],
+                                "location": [
+                                    0,
+                                    0
+                                ],
+                                "name": "point",
+                                "type": "element"
+                            },
+                            {
+                                "construction": [
+                                    [
+                                        1,
+                                        0
+                                    ]
+                                ],
+                                "location": [
+                                    1,
+                                    0
+                                ],
+                                "name": "point",
+                                "type": "element"
+                            },
+                            {
+                                "construction": [
+                                    [
+                                        0,
+                                        1
+                                    ]
+                                ],
+                                "location": [
+                                    0,
+                                    1
+                                ],
+                                "name": "point",
+                                "type": "element"
+                            },
+                            {
+                                "construction": [
+                                    [
+                                        1,
+                                        1
+                                    ]
+                                ],
+                                "location": [
+                                    1,
+                                    1
+                                ],
+                                "name": "point",
+                                "type": "element"
+                            }
+                        ],
                         "location": [
                             0,
                             0,
                             0
                         ],
-                        "type": "element",
-                        "name": "cylinder"
-                    }
-                ],
-                "type": "operation",
-                "name": "difference"
-            },
-            {
-                "size": [
-                    1,
-                    1,
-                    1
-                ],
-                "type": "element",
-                "center": [
-                    0,
-                    0,
-                    0
-                ],
-                "name": "cube",
-                "location": [
-                    0,
-                    0,
-                    0
-                ]
-            }
-        ],
-        "type": "operation",
-        "name": "intersection"
-    },
-    "requires": [],
-    "parameters": {
-        "type": "parameter",
-        "name": "a param"
-    }
+                        "name": "square",
+                        "size": [
+                            1,
+                            1,
+                            1
+                        ],
+                        "type": "element"
+                    },
+                    "length": 1,
+                    "name": "extrude",
+                    "type": "operation"
+                }
+            ],
+            "location": [
+                0,
+                0,
+                0
+            ],
+            "name": "cube",
+            "size": [
+                1,
+                1,
+                1
+            ],
+            "type": "element"
+        }
+    ],
+    "name": "intersection",
+    "type": "operation"
 }
