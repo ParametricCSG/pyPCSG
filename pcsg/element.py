@@ -12,6 +12,7 @@ class Primitive(Element):
         Element.__init__(self, name)
         self.location = [0,0,0]
         self.center = [0,0,0]
+        self.color = [] #Set to RGBA array with vals 0-1. Alpha is optional, defaults to 1.
         self.construction = []
     def __add__(self, other):
         return Union([self, other])
