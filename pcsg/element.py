@@ -36,11 +36,13 @@ class Cylinder(Primitive):
         Primitive.__init__(self, name = "cylinder")
         self.radius = radius
         self.height = height
+        self.center = [1,1,0] #OpenSCAD default
         self.construction = []
 
 class Sphere(Primitive):
     def __init__(self, radius = 0):
         Primitive.__init__(self, name = "sphere")
         self.radius = radius
+        self.center = [1,1,1] #OpenSCAD default
         self.construction = []
        
