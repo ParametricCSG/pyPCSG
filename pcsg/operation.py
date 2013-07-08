@@ -32,3 +32,11 @@ class Extrude(component.Operation):
         return Union([self, other])
     def __sub__(self, other):
         return Difference([self, other])
+        
+class Hull(component.Operation):
+    def __init__(self, elements):
+        component.Operation.__init__(self, name = "hull", elements = elements)
+    def __add__(self, other):
+        return Union([self, other])
+    def __sub__(self, other):
+        return Difference([self, other])      
