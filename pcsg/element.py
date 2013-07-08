@@ -11,6 +11,7 @@ class Primitive(Element):
     def __init__(self, name = ""):
         Element.__init__(self, name)
         self.location = [0,0,0]
+        self.rotation = _rotation()
         self.center = [0,0,0]
         self.color = [] #Set to RGBA array with vals 0-1. Alpha is optional, defaults to 1.
         self.construction = []
@@ -46,4 +47,10 @@ class Sphere(Primitive):
         self.radius = radius
         self.center = [1,1,1] #OpenSCAD default
         self.construction = []
+    
+#Classes to make members scoped as needed       
        
+class _rotation(object):
+    def __init__(self):
+        self.angle = 0
+        self.axis = [0,0,0]
