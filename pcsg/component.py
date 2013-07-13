@@ -14,8 +14,7 @@ class Element(PCSG):
         self.construction = construction
 
 class Parameter(PCSG):
-    def __init__(self, name = "", parentName = ""):
+    def __init__(self, name = "", value = None):
         PCSG.__init__(self, category = "parameter", name = name)
-
-
+        self.value = value
 

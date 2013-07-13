@@ -7,7 +7,7 @@ class Union(component.Operation):
         return Union([self, other])
     def __sub__(self, other):
         return Difference([self, other])
-	  
+
 class Difference(component.Operation):
     def __init__(self, elements):
         component.Operation.__init__(self, name = "difference", elements = elements)
@@ -15,7 +15,7 @@ class Difference(component.Operation):
         return Union([self, other])
     def __sub__(self, other):
         return Difference([self, other])
-	    
+
 class Intersection(component.Operation):
     def __init__(self,elements):
         component.Operation.__init__(self, name = "intersection", elements = elements)
@@ -23,7 +23,7 @@ class Intersection(component.Operation):
         return Union([self, other])
     def __sub__(self, other):
         return Difference([self, other])
-	    
+
 class Extrude(component.Operation):
     def __init__(self, elements, length):
         component.Operation.__init__(self, name = "extrude", elements = elements)
@@ -40,3 +40,22 @@ class Hull(component.Operation):
         return Union([self, other])
     def __sub__(self, other):
         return Difference([self, other])      
+
+class Rotate(component.Operation):
+    def __init__(self, angle = 0, axis=[0,0,0], elements):
+        component.Operation.__init__(self, name = "rotate", elements = elements)
+        self.angle = angle
+        self.axis = axis
+    def __add__(self, other):
+        return Union([self, other])
+    def __sub__(self, other):
+        return Difference([self, other])
+
+class Translate(component.Operation):
+    def __init__(self, location = [0,0,0], elements):
+        component.Operation.__init__(self, name = "rotate", elements = elements)
+        self.location = location
+    def __add__(self, other):
+        return Union([self, other])
+    def __sub__(self, other):
+        return Difference([self, other])
