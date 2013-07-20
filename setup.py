@@ -1,10 +1,11 @@
 from distutils.core import setup
 
-setup(name='pcsg',
+setup(name='textcad',
       version='0.0.1',
-      description='Python Parametric Computational Solid Geometry Framework',
+      description='Python textcad implementation',
       author='Steve kelly',
       author_email='kd2cca@gmail.com',
-      url='http://www.github.com/sjkelly/pyPCSG',
-      packages=['pcsg']
+      url='http://www.github.com/textcad/python-textcad',
+      package_dir={'textcad': 'src'},
+      packages=['textcad']
      )

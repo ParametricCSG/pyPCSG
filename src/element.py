@@ -1,12 +1,12 @@
-from component import *
-from operation import *
+from textcad.component import *
+from textcad.operation import *
 
 class Point(Element):
     def __init__(self, location):
         Element.__init__(self, name = "point")
         self.location = location
         self.construction = [self.location]
-		
+
 class Primitive(Element):
     def __init__(self, name = ""):
         Element.__init__(self, name)
@@ -19,7 +19,7 @@ class Primitive(Element):
         return Union([self, other])
     def __sub__(self, other):
         return Difference([self, other])
-	    
+
 class Square(Primitive):
     def __init__(self, size = [0,0,0]):
         Primitive.__init__(self, name = "square")
@@ -41,15 +41,40 @@ class Cylinder(Primitive):
         self.center = [1,1,0] #OpenSCAD default
         self.construction = []
 
+class Hole(Primitive):
+    def __init__(self, radius = 0, height = 0):
+        Primitive.__init__(self, name = "hole")
+        self.radius = radius
+        self.height = height
+        self.center = [1,1,0] #OpenSCAD default
+        self.construction = []
+
+class Cone(Primitive):
+    def __init__(self, topRadius=0, bottomRadius=0, height=0):
+        Primitive.__init__(self, name = "cone")
+        self.topRadius = topRadius
+        self.bottomRadius = bottomRadius
+        self.height = height
+        self.center = [1,1,0] #OpenSCAD default
+        self.construction = []
+
+class Ntube(Primitive):
+    def __init__(self, sides=0, apothem=0, height=0):
+        Primitive.__init__(self, name = "ntube")
+        self.sides = sides
+        self.apothem = apothem
+        self.height = height
+        self.center = [1,1,0] #OpenSCAD default
+        self.construction = []
+
 class Sphere(Primitive):
     def __init__(self, radius = 0):
         Primitive.__init__(self, name = "sphere")
         self.radius = radius
         self.center = [1,1,1] #OpenSCAD default
         self.construction = []
-    
+
 #Classes to make members scoped as needed       
-       
 class _rotation(object):
     def __init__(self):
         self.angle = 0
