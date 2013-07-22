@@ -53,7 +53,7 @@ class Rotate(component.Operation):
 
 class Translate(component.Operation):
     def __init__(self, location = [0,0,0], elements = []):
-        component.Operation.__init__(self, name = "rotate", elements = elements)
+        component.Operation.__init__(self, name = "translate", elements = elements)
         self.location = location
     def __add__(self, other):
         return Union([self, other])
