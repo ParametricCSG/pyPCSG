@@ -41,10 +41,11 @@ class Cylinder(Primitive):
         self.construction = []
 
 class Hole(Primitive):
-    def __init__(self, radius = 0, height = 0):
+    def __init__(self, radius = 0, height = 0, tolerance=0):
         Primitive.__init__(self, name = "hole")
         self.radius = radius
         self.height = height
+        self.tolerance = tolerance
         self.center = [1,1,0] #OpenSCAD default
         self.construction = []
 
