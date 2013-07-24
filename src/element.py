@@ -24,14 +24,13 @@ class Square(Primitive):
     def __init__(self, size = [0,0,0]):
         Primitive.__init__(self, name = "square")
         self.size = size
-        self.construction = [Point([0,0]), Point([size[0],0]), 
-                             Point([0,size[1]]), Point([size[0], size[1]])]		
+        self.construction = []
 
 class Cube(Primitive):
     def __init__(self, size = [0,0,0]):
         Primitive.__init__(self, name = "cube")
         self.size = size
-        self.construction = [Extrude([Square(size)], size[2])]
+        self.construction = []
 
 class Cylinder(Primitive):
     def __init__(self, radius = 0, height = 0):
